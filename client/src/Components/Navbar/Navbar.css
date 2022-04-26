@@ -1,0 +1,44 @@
+body {
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-madera-blanco-vintage-viejo-tablon-madera-resistida-pintado-color-blanco_1484-1686.jpg?w=2000');
+}
+
+*{list-style:none}
+
+#logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: rgb(231, 245, 199);
+    margin: 0;
+}
+
+#elNav {
+    background-color: rgb(77, 144, 127);
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+
+}
+
+.nav {
+    display: flex;
+    margin: 3px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.liNav {
+    margin-right: 30px ;
+    align-self: center;
+}
+
+.link {
+    text-decoration: none;
+    color:beige;
+    font-size: 20px;
+}
+
+.link:hover {
+    color: rgb(250, 214, 10);
+    font-size: 25px;
+
+}

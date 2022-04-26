@@ -1,0 +1,133 @@
+.recetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 430px;
+}
+
+.barra_pag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(27, 26, 26);
+    padding: 3px;
+    margin-bottom: 0;
+}
+
+.paginas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.bot_pag {
+    display: flex;
+    flex-direction: column;
+}
+
+.cambiar_pag {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(208, 210, 210);
+    border-radius: 5px;
+    height: 40px;
+    margin: 0 10px 0 10px;
+}
+
+.p_pag {
+    color: rgb(208, 210, 210);
+    font-size: 18px;
+}
+
+.pag_Acambiar {
+    color: rgb(208, 210, 210);
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.bot_pag_inc {
+    font-size: 12px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 0 3px 0 0;
+    background-color: rgb(27, 26, 26);
+    border: 1px solid rgb(208, 210, 210);
+    color: rgb(208, 210, 210);
+}
+
+.bot_pag_inc:hover {
+    background-color: rgb(208, 210, 210);
+    color: rgb(27, 26, 26);
+}
+
+.bot_pag_dec {
+    font-size: 12px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 0 0 3px 0;
+    background-color: rgb(27, 26, 26);
+    border: 1px solid rgb(208, 210, 210);
+    color: rgb(208, 210, 210);
+}
+
+.bot_pag_dec:hover {
+    background-color: rgb(208, 210, 210);
+    color: rgb(27, 26, 26);
+}
+
+.pag_cant {
+    color: rgb(208, 210, 210);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+}
+
+.boton_prev {
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgb(208, 210, 210);
+    border-radius: 8px 0 0 8px;
+    color: rgb(208, 210, 210);
+}
+
+.boton_prev:hover {
+    background-color: rgb(208, 210, 210);
+    color: rgb(27, 26, 26);
+}
+
+.boton_next {
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgb(208, 210, 210);
+    border-radius: 0 8px 8px 0;
+    color: rgb(208, 210, 210);
+}
+
+.boton_next:hover {
+    background-color: rgb(208, 210, 210);
+    color: rgb(27, 26, 26);
+}
+
+.boton_ir {
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgb(208, 210, 210);
+    border-radius: 8px;
+    color: rgb(208, 210, 210);
+}
+
+.boton_ir:hover {
+    background-color: rgb(208, 210, 210);
+    color: rgb(27, 26, 26);
+}
+
+.disabled {
+    display: none;
+}

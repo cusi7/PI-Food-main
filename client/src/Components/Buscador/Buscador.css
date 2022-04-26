@@ -1,0 +1,95 @@
+.contenedor {
+    padding-top: 55px;
+}
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(27, 26, 26);
+    padding-top: 3px;
+    padding-bottom: 7px;
+}
+
+.divOpciones {
+    display: flex;
+}
+
+.titulosBarra {
+    color:rgb(208, 210, 210);
+    font-size: 20px;
+}
+
+.selector {
+    margin: 18px 0 10px 3px;
+    background-color: rgb(27, 26, 26);
+    border: 1px solid rgb(208, 210, 210);
+    border-radius: 5px;
+    color: rgb(208, 210, 210);
+    font-size: 15px;
+}
+
+.botonApp {
+    font-size: 18px;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgb(208, 210, 210);
+    border-radius: 8px;
+    color: rgb(208, 210, 210);
+}
+
+.form {
+    display: flex;
+    align-content: center;
+
+}
+
+.input {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgb(208, 210, 210);
+    border-radius: 8px 0 0 8px;
+    color: rgb(208, 210, 210);
+    font-size: 18px;
+}
+
+.botonInput {
+    font-size: 18px;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgb(208, 210, 210);
+    border-radius: 0 8px 8px 0;
+    color: rgb(208, 210, 210);
+}
+
+.botonApp:hover {
+    background-color: rgb(208, 210, 210);
+    color: rgb(27, 26, 26);
+}
+
+.botonInput:hover {
+    background-color: rgb(208, 210, 210);
+    color: rgb(27, 26, 26);
+}
+
+.oculto {
+    display: none;
+}
+
+.mensaje_load {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(155, 26, 14);
+    font-family: 'Gochi Hand', cursive;
+    margin-top: 50px;
+}
+
