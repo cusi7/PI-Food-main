@@ -6,8 +6,6 @@ const { Router } = require('express');
 const{Diet, Recipe} = require('../db.js');
 const router = Router();
 
-var numApi = 1;
-
 
 // //Obtener un listado de las recetas que contengan la palabra ingresada 
 // //como query parameter
