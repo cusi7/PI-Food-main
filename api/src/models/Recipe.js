@@ -8,17 +8,13 @@ module.exports = (sequelize) => {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
-      // get() {
-      //   return `DB${this.getValue('id')}`
-      // }
+     
     },
     
     title: {
       type: DataTypes.STRING,
       allowNull: false,
-      // set(value) {
-      //   this.setValue('title', value.toLowerCase())
-      // }
+      
     },
    
     image: {

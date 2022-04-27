@@ -137,6 +137,8 @@ function Creator(props){
         } 
     };
 
+          
+
     return (
 
         <div className="cont_creator">
@@ -204,7 +206,7 @@ function Creator(props){
                             </div>
                                 )
 
-                      }) : <p className="p_diet_check">SORRY</p>
+                      }) : <p className="p_diet_check">SORRY, diets not found</p>
                     }
                            
                 </form>          

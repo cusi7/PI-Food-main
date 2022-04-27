@@ -6,7 +6,7 @@ const { Router } = require('express');
 const{Diet, Recipe} = require('../db.js');
 const router = Router();
 
-
+const apiKey = API_KEY_1;
 // //Obtener un listado de las recetas que contengan la palabra ingresada 
 // //como query parameter
 router.get('/', async(req, res) => {
@@ -14,7 +14,7 @@ router.get('/', async(req, res) => {
 
  try {
      //recetas de la API
-    const getRecipes = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY_8}&addRecipeInformation=true&number=100`)
+    const getRecipes = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&addRecipeInformation=true&number=100`)
     .then((r) => r.data.results.map(e => {
         receta = {
             id: e.id, 
@@ -151,7 +151,7 @@ router.get('/:idReceta', async(req, res) => {
         }
         else {
             let idRec = idReceta;
-            const receta = await axios.get( `https://api.spoonacular.com/recipes/${idRec}/information?apiKey=${API_KEY_8}`)
+            const receta = await axios.get( `https://api.spoonacular.com/recipes/${idRec}/information?apiKey=${apiKey}`)
                 .then ( (r) => r.data );
                     let instrucciones= [];
                     let recipe = {};
