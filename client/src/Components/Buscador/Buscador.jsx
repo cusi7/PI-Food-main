@@ -4,6 +4,7 @@ import './Buscador.css';
 import {getAllRecipes, getRecipesName, getDiets, alphAsc, alphDes, scoreAsc, scoreDes, acordDiet} from '../../Redux/Actions.js';
 import Paginacion from "../Paginacion/Paginacion.jsx";
 import { connect } from "react-redux";
+import pizza from '../../images/pizza.png';
 
 function Buscador (props) {
     // const dispatch = useDispatch();
@@ -35,7 +36,7 @@ function Buscador (props) {
             mount();
         }, []);
 
-    
+    //va a setear recetas q se renderizaran
     function recipeBook(){
         if(rec === 'all') {
             setRecetas(() => recipes);
@@ -57,9 +58,11 @@ function Buscador (props) {
         recipeBook()
     }, [rec]);
 
+    //buscar por nombre
    function handleChange (event) {
         setTitle(event.target.value);
       };
+    //buscar por nombre  
    async function handleSubmit(event) {
         event.preventDefault(); 
         setRec('')
@@ -74,6 +77,7 @@ function Buscador (props) {
         } setLoad(false)  
       };
       
+      //cambia el orden
    function changeOrd(event) {
        event.preventDefault();
        let ord = event.target.value;
@@ -98,10 +102,12 @@ function Buscador (props) {
        } 
         };
 
+        //busca recetas por dieta
    async function changeDiet(event) {
         event.preventDefault();
         let diet = (event.target.value).toLowerCase();
-        let name = title
+        let name = title;
+        setRec('');
             if(rec === 'name') {
                 try {
                     setLoad(true)
@@ -178,7 +184,7 @@ function Buscador (props) {
 
             <div 
             className={(load ===true) ? 'mensaje_load' : 'oculto'}>
-                <p>Cargando...</p>
+                <img src={pizza} alt='imagen load' className="img_loader"/>
             </div>
 
             <div 

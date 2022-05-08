@@ -11,9 +11,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 10px 10px 17px -2px rgba(97,94,97,0.64);
+    box-shadow: 10px 10px 17px -2px rgba(97,94,97,0.64); 
 }
 
+.card {
+    -webkit-transition:all .5s ease; /* Safari y Chrome */
+    -moz-transition:all .5s ease; /* Firefox */
+    -o-transition:all .5s ease; /* IE 9 */
+    -ms-transition:all .5s ease; /* Opera */
+}
+
+.card:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+    }
 
 .scores {
     display: flex;

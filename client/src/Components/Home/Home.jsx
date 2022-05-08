@@ -7,7 +7,7 @@ import Buscador from '../Buscador/Buscador.jsx';
 export default function Home () {
     return (
         <div>
-            {/* <NavBar /> */}
+           
             <Buscador />
         </div>
         

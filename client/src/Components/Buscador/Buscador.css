@@ -93,3 +93,17 @@
     margin-top: 50px;
 }
 
+.img_loader {
+    width: 300px;
+    animation: loader 1.5s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

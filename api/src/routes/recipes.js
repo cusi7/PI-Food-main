@@ -6,7 +6,7 @@ const { Router } = require('express');
 const{Diet, Recipe} = require('../db.js');
 const router = Router();
 
-const apiKey = API_KEY_1;
+const apiKey = API_KEY_3;
 // //Obtener un listado de las recetas que contengan la palabra ingresada 
 // //como query parameter
 router.get('/', async(req, res) => {

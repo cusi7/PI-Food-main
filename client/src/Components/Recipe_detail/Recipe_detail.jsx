@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
 import { getRecipeId } from "../../Redux/Actions.js";
+import pizza from '../../images/pizza.png';
 import './Recipe_detail.css';
 
 
@@ -34,7 +35,7 @@ function RecipeDetail(props) {
         <div className="todo">
             <div 
             className={(load ===true) ? 'mensaje_load' : 'oculto'}>
-                <p>Cargando...</p>
+                 <img src={pizza} alt='imagen load' className="img_loader"/>
             </div>
             {recipe ? (<div 
             className={(load === true) ? 'oculto' : "hoja"}>

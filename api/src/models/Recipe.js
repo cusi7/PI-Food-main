@@ -4,17 +4,10 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('recipe', {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-     
-    },
-    
     title: {
       type: DataTypes.STRING,
       allowNull: false,
-      
+      unique: true     
     },
    
     image: {
@@ -36,7 +29,6 @@ module.exports = (sequelize) => {
     spoonacularScore: {   //puntuación
       type:  DataTypes.DECIMAL,
       validate: {
-        isDecimal: true,
         puntaje(value) {
           if(value > 100) throw new Error('El puntaje debe ser menor a 100')
         }
@@ -44,9 +36,8 @@ module.exports = (sequelize) => {
     },
     
     healthScore: {   //Nivel de "comida saludable"
-      type: DataTypes.DECIMAL,  // // //al mandarlo
+      type: DataTypes.DECIMAL,  
       validate: {
-        isDecimal: true,
         puntaje(value) {
           if(value > 100.0) throw new Error('El puntaje debe ser menor a 100')
         }

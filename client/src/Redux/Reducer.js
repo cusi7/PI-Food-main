@@ -10,9 +10,6 @@ let initialState = {
 
 const reducer = (state = initialState, action) => {
     switch(action.type) {
-        case 'PRUEBA': 
-            return state
-            ;
         case 'GET_RECIPES_NAME': 
             return {
                 ...state,

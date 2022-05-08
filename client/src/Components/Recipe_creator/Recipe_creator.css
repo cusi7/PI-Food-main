@@ -1,7 +1,7 @@
 .cont_creator {
     padding-top: 75px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .creator {
@@ -172,12 +172,45 @@
     color: rgb(195, 31, 31);
 }
 
+.boton_crear_rec:disabled {
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgb(53, 51, 51);
+    color: rgb(53, 51, 51);
+}
+
+.cuadro_creado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 26, 26, 0.3);
+    border-radius: 50px;
+    width: 380px;
+    height: 230px;
+}
+
+.img_ok {
+    width: 150px;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+       transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 .mensaje_creado {
-    text-align: center;
-    font-size: 20px;
-    color: rgb(155, 26, 14);
     font-family: 'Gochi Hand', cursive;
-    margin-top: 50px;
-    margin-left: 250px;
+    font-size: 25px;
+    color: rgb(27, 26, 26);
+    margin-top: -18px;
+    margin-bottom: -8px;
 }
+

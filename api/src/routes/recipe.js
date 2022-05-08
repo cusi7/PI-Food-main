@@ -6,21 +6,25 @@ const router = Router();
 
 router.post('/', async(req, res) => {
    let{title, image, summary, dishTypes, spoonacularScore, healthScore, analyzedInstructions, dietsNames} = req.body;  //dietsNames lo traigo como array de names
+   let score = null;
+   let hScore = null;
+   if(spoonacularScore !== null) score = Number(spoonacularScore);
+   if(healthScore !== null) hScore = Number(healthScore);
 
    try {
        let newRecipe = await Recipe.create({
-        title : title.toLowerCase(), 
+        title: title.toLowerCase(), 
         image, 
         summary,
         dishTypes, 
-        spoonacularScore: Number(spoonacularScore) ,
-        healthScore: Number(healthScore), 
+        spoonacularScore: score,
+        healthScore: hScore, 
         analyzedInstructions,
         DB: true
        });
-       
-       
-       if(dietsNames.length > 0) {
+       let dietsOk = null;
+
+       if( dietsNames && dietsNames.length > 0) {
         dietsNames.forEach( async(d) => {
             let dieta = d.toLowerCase();
             let [instance, created] = await Diet.findOrCreate({
@@ -30,17 +34,13 @@ router.post('/', async(req, res) => {
                 }  
             });
             if(instance) {
-                newRecipe.addDiet(instance);}
-                
-    
+                newRecipe.addDiet(instance)}   
             else if(created) {
                 newRecipe.addDiet(created);
-
-            }
-           
+            };
            })
-       }
-       let dietsOk = dietsNames.map(d => d.toLowerCase());
+           dietsOk = dietsNames.map(d => d.toLowerCase());
+        };
 
        let recipe = {
         id: newRecipe.id,
@@ -55,10 +55,10 @@ router.post('/', async(req, res) => {
         DB: newRecipe.DB
        }
     
-       res.json(recipe );
+       res.json(recipe);
    
-    } catch (error) {
-        res.status(404).json({error: 'Error post DB'})
+    } catch (errors) {
+        res.send(errors.message)
    }
 });
 

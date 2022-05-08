@@ -12,6 +12,7 @@ export default function Paginacion(props) {
     useEffect(() => {
       setPages(Math.ceil(data.length / 9));
       setNumPage(1);
+      setPagIndex(1)
     }, [data])
   
     function nextPage() {
