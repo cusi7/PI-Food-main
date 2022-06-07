@@ -44,6 +44,10 @@ API_KEY_2 = a1c3aca61b0e4f5e8bb0c0a6adb86966
 API_KEY_3 = 3ffdfb254ab34fdcb6b5342124214f24
 ```
 Las Api key tienen un numero de peticiones limitadas, por lo que si no emite respuesta debes cambiar el numero de api key en `api/src/routes/recipes.js`
+
++ En la consola abre la carpeta `api` y ejecuta `npm start` 
+
++ En otra terminal abre la carpeta `client` y ejecuta `npm start`. Recipe Book se ejecutara en [http://localhost:3000/](http://localhost:3000/)
 #
 
 
