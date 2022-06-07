@@ -185,10 +185,10 @@ function Creator(props){
                             <p className='danger'>{errors.summary}</p>
                         </li>
                         <li>
-                            <div className="items_form">
+                            {/* <div className="items_form">
                                 <label htmlFor="spoonacularScore" className="p_form_title">Score: </label>
                                 <input type="text" id="spoonacularScore" name="spoonacularScore" autoComplete="off" className="input_small" value={recipe.spoonacularScore} onChange={(e)=>recipeValues(e)}/>
-                            </div>
+                            </div> */}
                             
                             <p className='danger'>{errors.spoonacularScore}</p>
                         </li>
@@ -264,8 +264,8 @@ function Creator(props){
                          
                      </div>
                      <div className="box_score">
-                          <h3 className="h3_model">Score: </h3>
-                            {recipe.spoonacularScore ? <p className='p_model'>* {recipe.spoonacularScore} </p> : <p className='p_detalle'>--</p>}
+                          {/* <h3 className="h3_model">Score: </h3>
+                            {recipe.spoonacularScore ? <p className='p_model'>* {recipe.spoonacularScore} </p> : <p className='p_detalle'>--</p>} */}
 
                           <h3 className="h3_model">Health-Score: </h3>
                             {recipe.healthScore ? <p className='p_model'>* {recipe.healthScore} </p> : <p className='p_detalle'>--</p>}

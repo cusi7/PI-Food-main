@@ -52,8 +52,8 @@ function RecipeDetail(props) {
                              
                              <div className="columna-der">
 
-                                      <h3 className="h3_detalle">Score: </h3>
-                                      {recipe.spoonacularScore ? <p className='p_detalle'>* {recipe.spoonacularScore} *</p> : <p className='p_detalle'>--</p>}
+                                      {/* <h3 className="h3_detalle">Score: </h3>
+                                      {recipe.spoonacularScore ? <p className='p_detalle'>* {recipe.spoonacularScore} *</p> : <p className='p_detalle'>--</p>} */}
 
                                       <h3 className="h3_detalle">Health-Score: </h3>
                                       {recipe.healthScore ? <p className='p_detalle'>* {recipe.healthScore} *</p> : <p className='p_detalle'>--</p>}

@@ -141,8 +141,8 @@ function Buscador (props) {
                             <option>Elige una opcion...</option>
                             <option value='alphAsc'>A-Z</option>
                             <option value='alphDesc'>Z-A</option>
-                            <option value='spoonAsc'>Score Min-Max</option>
-                            <option value='spoonDesc'>Score Max-Min</option>
+                            {/* <option value='spoonAsc'>Score Min-Max</option>
+                            <option value='spoonDesc'>Score Max-Min</option> */}
                             <option value='healthAsc'>Health-Score Min-Max</option>
                             <option value='healthDesc'>Health-Score Max-Min</option>
                    </select>

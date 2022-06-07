@@ -15,15 +15,15 @@ router.get('/', async(req, res) => {
 
         } else {
             let dietss = await Diet.bulkCreate([
-                {name: 'Gluten Free'},
-                {name: 'Dairy free'},
-                {name: 'Lacto Ovo Vegetarian'},
-                {name: 'Vegan'},
-                {name: 'Pescatarian'},
-                {name: 'Paleolithic'},
-                {name: 'Primal'},
-                {name: 'Fodmap friendly'},
-                {name: 'Whole 30'}
+                {name: 'gluten Free'},
+                {name: 'dairy free'},
+                {name: 'lacto ovo vegetarian'},
+                {name: 'vegan'},
+                {name: 'pescatarian'},
+                {name: 'paleolithic'},
+                {name: 'primal'},
+                {name: 'fodmap friendly'},
+                {name: 'whole 30'}
               
             ]);
 

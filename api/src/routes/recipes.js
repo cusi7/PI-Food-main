@@ -1,7 +1,7 @@
 const { Op } = require('sequelize'); //preguntar si se puede usar
 const axios = require ('axios');
 require('dotenv').config();
-const {API_KEY_1, API_KEY_2, API_KEY_3, API_KEY_4, API_KEY_5, API_KEY_6, API_KEY_7, API_KEY_8, API_KEY_9, API_KEY_10} = process.env;
+const {API_KEY_1, API_KEY_2, API_KEY_3 } = process.env;
 const { Router } = require('express');
 const{Diet, Recipe} = require('../db.js');
 const router = Router();

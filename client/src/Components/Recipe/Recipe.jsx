@@ -20,8 +20,8 @@ export default function Card (props) {
                 </div>
                             
                 <div className="scores">
-                    <h3 className="h3_recipe">Score: </h3>
-                    <p className="p_recipe_s">{spoonacularScore}</p>
+                    {/* <h3 className="h3_recipe">Score: </h3>
+                    <p className="p_recipe_s">{spoonacularScore}</p> */}
                     <h3 className="h3_recipe">Health-Score: </h3>
                      <p className="p_recipe_s">{healthScore}</p>
                 </div>

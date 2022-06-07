@@ -49,7 +49,8 @@
 }
 
 .imageRec {
-    height: 200px;
+    max-height: 200px;
+    max-width: 300px;
     border-radius: 20px;
     box-shadow: 10px 10px 17px -2px rgba(97,94,97,0.64);
 }
